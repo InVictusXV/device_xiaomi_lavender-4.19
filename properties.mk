@@ -125,6 +125,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m
+    dalvik.vm.dex2oat64.enabled=true
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
