@@ -76,7 +76,6 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|384b6ceca9703c6f2f
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|4995571288da93036acbab6d052ec3dbeb90641d
 vendor/lib64/libbtnv.so|d7b09c0e44ef00b5f29398aa2e1d86dbc775fd28
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|1b8ea7096ded35acef0bbc1a25840c0b1c12be04
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|e14abd3a8413ccfac55339ad03b592bfe642b833
 
 # Bluetooth (aptX) - from crosshatch-user 11 RP1A.201105.002 6869500 release-keys
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
@@ -214,6 +213,13 @@ vendor/lib64/libcpion.so|afa44f5941a880a4d304dfac4b5d175762b20539
 vendor/lib64/librmp.so|176aed768090f0c8b48cb6ad9e397b35f128b2a5
 vendor/lib64/libwvhidl.so|ed7cd4a47e17738dfaec0c45d4184d75e77f5693
 vendor/lib64/mediadrm/libwvdrmengine.so|9cd722b68ae795f48b4a8f082fcfdc84219fb703
+
+# FM - from laurel_sprout V12.0.3.0.RFQMIXM
+system_ext/lib64/fm_helium.so|68702cf4304128663a1578150a1ed8063d93ca73
+system_ext/lib64/libfm-hci.so|0da384e2fd4809bb39a36fb25d3c6c0325cea0c3
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so|b7dd1354a1415cf49b96b6bb0cc44920c41d2aab
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|e8a122a7644c4c258eda87385c89b0d6c596637f
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44fb21
 
 # GPS - from laurel_sprout V12.0.3.0.RFQMIXM
 vendor/bin/garden_app|24cc82cab6ede28962c7e0b24cd6a2daf010a503

@@ -17,7 +17,7 @@
 
 set -e
 
-DEVICE_COMMON=sdm660-common
+DEVICE=lavender
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
@@ -68,19 +68,10 @@ function blob_fixup() {
 }
 
 # Initialize the common helper
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$ANDROID_ROOT" true $CLEAN_VENDOR
+setup_vendor "$DEVICE" "$VENDOR" "$ANDROID_ROOT" true $CLEAN_VENDOR
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" \
     "${KANG}" --section "${SECTION}"
-extract "$MY_DIR"/proprietary-files-fm.txt "$SRC" \
-    "${KANG}" --section "${SECTION}"
-
-if [ -s "$MY_DIR"/../$DEVICE_SPECIFIED_COMMON/proprietary-files.txt ];then
-    # Reinitialize the helper for device specified common
-    setup_vendor "$DEVICE_SPECIFIED_COMMON" "$VENDOR" "$ANDROID_ROOT" false "$CLEAN_VENDOR"
-    extract "$MY_DIR"/../$DEVICE_SPECIFIED_COMMON/proprietary-files.txt "$SRC" \
-    "${KANG}" --section "${SECTION}"
-fi
 
 if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
     # Reinitialize the helper for device
