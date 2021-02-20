@@ -54,6 +54,7 @@
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
         "647000000",
+        "465000000",
         "266000000"
       ],
       "ResetOnInit": true
@@ -96,7 +97,7 @@
     },
     {
       "Name": "CPUBWHystTriggerCount",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count",
+      "Path": "/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count",
       "Values": [
         "0",
         "3"
@@ -105,7 +106,7 @@
     },
     {
       "Name": "CPUBWHistMemory",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hist_memory",
+      "Path": "/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory",
       "Values": [
         "0",
         "20"
@@ -114,11 +115,9 @@
     },
     {
       "Name": "CPUBWMinFreq",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/min_freq",
+      "Path": "/sys/class/devfreq/soc:qcom,cpubw/min_freq",
       "Values": [
         "6881",
-        "4943",
-        "3879",
         "2597",
         "762"
       ],
@@ -128,8 +127,8 @@
       "Name": "PMQoSCpuDmaLatency",
       "Path": "/dev/cpu_dma_latency",
       "Values": [
-        "0x0000002b",
-        "0x00000064"
+        "43",
+        "100"
       ],
       "HoldFd": true
     },
@@ -205,7 +204,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBWMinFreq",
       "Duration": 0,
-      "Value": "3879"
+      "Value": "2597"
     },
     {
       "PowerHint": "LAUNCH",
@@ -229,7 +228,7 @@
       "PowerHint": "LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 5000,
-      "Value": "0x0000002b"
+      "Value": "43"
     },
     {
       "PowerHint": "LAUNCH",
@@ -268,6 +267,12 @@
       "Value": "10000"
     },
     {
+      "PowerHint": "AUDIO_STREAMING",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 2000,
+      "Value": "43"
+    },
+    {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "PowerHALRenderingState",
       "Duration": 0,
@@ -277,7 +282,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "647000000"
+      "Value": "465000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
