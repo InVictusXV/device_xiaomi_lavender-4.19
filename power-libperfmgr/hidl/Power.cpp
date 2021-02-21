@@ -158,6 +158,9 @@ Return<void> Power::setFeature(Feature feature, bool activate)  {
         default:
             break;
     }
+
+Return<void> Power::setFeature(Feature /*feature*/, bool /*activate*/) {
+    // Nothing to do
     return Void();
 }
 
