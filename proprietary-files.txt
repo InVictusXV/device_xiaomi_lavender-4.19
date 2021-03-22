@@ -1028,8 +1028,8 @@ vendor/lib/libmmcamera_tintless_bg_pca_algo.so|8d0742522e0af649ee05fb85fa1a204ac
 vendor/lib/libmmcamera_tuning.so|28364a5125194034584cb44e053272a9d70fa5b5
 vendor/lib/libmmcamera_tuning_lookup.so|e00c7abb7b72ceff77fbd73d7b38f3fa8fdb31ca
 
-# Charger - from jasmine
-vendor/bin/hvdcp_opti|120837d6d44abfd86515731dd26183be9cdd5596
+# Charger - from ginkgo V12.0.1.0.RCOCNXM
+vendor/bin/hvdcp_opti|673f4c4eb8fa0ad5f274a18081c8619f4b775596
 
 # CNE - from curtana V12.0.1.0.RJWINXM
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar|88da95df5925ab3c173f951cfe56c95699908359
