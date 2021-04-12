@@ -1,0 +1,7 @@
+export USE_CCACHE=1
+export CCACHE_EXEC=/usr/bin/ccache
+ccache -M 100G
+export CCACHE_COMPRESS=1
+export SKIP_ABI_CHECKS=true
+export SELINUX_IGNORE_NEVERALLOWS=true
+export TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
