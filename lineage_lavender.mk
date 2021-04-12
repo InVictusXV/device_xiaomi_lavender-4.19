@@ -21,6 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Bianca stuff
 $(call inherit-product, vendor/bianca/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
